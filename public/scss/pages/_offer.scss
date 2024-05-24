@@ -1,0 +1,408 @@
+.offer {
+  margin-bottom: 150px;
+}
+
+.offer_list {
+  ul {
+    border: 1px solid #D0D0E6;
+    border-radius: 13px;
+
+    li {
+      border: 2px solid transparent;
+      border-radius: 13px;
+      transition: all 0.3s ease-in-out;
+      margin-top: -3px;
+
+      a {
+        padding: 15px 0px;
+        border-bottom: 1px solid #D0D0E6;
+        transition: all 0.3s ease-in-out;
+        margin: 0px 15px;
+        display: block;
+        color: #7272A8;
+        font-weight: 500;
+
+        img {
+          margin-right: 18px;
+        }
+      }
+
+      &.adgate {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          border-color: #47BCFA;
+          box-shadow: 0px 14px 24px rgba(71, 188, 250, 0.08);
+
+          a {
+            border-color: transparent;
+            color: #47BCFA;
+          }
+        }
+      }
+
+      &.toro {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          border-color: #EE6263;
+          box-shadow: 0px 14px 24px rgba(238, 98, 99, 0.08);
+
+          a {
+            border-color: transparent;
+            color: #EE6263;
+          }
+        }
+      }
+
+      &.kiwi {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          border-color: #A6CD36;
+          box-shadow: 0px 14px 24px rgba(166, 205, 54, 0.08);
+
+          a {
+            border-color: transparent;
+            color: #A6CD36;
+          }
+        }
+      }
+
+      &.peanut {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          border-color: #E74E2D;
+          box-shadow: 0px 14px 24px rgba(231, 78, 45, 0.08);
+
+          a {
+            border-color: transparent;
+            color: #E74E2D;
+          }
+        }
+      }
+
+      &.ayet {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          border-color: #1B3346;
+          box-shadow: 0px 14px 24px rgba(27, 51, 70, 0.08);
+
+          a {
+            border-color: transparent;
+            color: #1B3346;
+          }
+        }
+      }
+
+      &.personaly {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          border-color: #E03332;
+          box-shadow: 0px 14px 24px rgba(224, 51, 50, 0.08);
+
+          a {
+            border-color: transparent;
+            color: #E03332;
+          }
+        }
+      }
+
+      &.sayso {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          border-color: #EE9D3D;
+          box-shadow: 0px 14px 24px rgba(238, 157, 61, 0.08);
+
+          a {
+            color: #EE9D3D;
+          }
+        }
+
+        a {
+          border: 0px;
+        }
+      }
+    }
+  }
+}
+
+iframe {
+  border: 0px;
+}
+
+
+// offer v1
+
+
+.left-icon-big {
+  background: #F66E84;
+  padding: 30px 30px;
+  border-radius: 24px;
+  margin-bottom: 50px;
+  border: 0px;
+
+  .close {
+    position: absolute;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .alert-left-icon-big {
+    align-self: center;
+    margin-right: 0.9375rem;
+
+    i {
+      font-size: 48px;
+      color: #fff;
+    }
+  }
+
+  .flex-grow-1 {
+    h5 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 16px;
+      // line-height: px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.offer_sidebar {
+  box-shadow: 0px 36px 48px rgba(31, 66, 135, 0.04);
+}
+
+.offer_sidebar-list {
+  ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 0px;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 40px;
+
+        i {
+          font-size: 20px;
+          font-weight: bold;
+          margin-right: 30px;
+        }
+
+        .badge {
+          background: #34BFA3;
+          position: absolute;
+          right: 0;
+          padding: 5px 10px;
+          border-radius: 50px;
+          color: #fff;
+          top: 10px;
+          text-transform: uppercase;
+
+          // &.top {}
+
+          &.easy {
+            background: #36a3f7;
+          }
+
+          &.new {
+            background: #FE9431;
+          }
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.revenue_universe {
+  box-shadow: 0px 36px 48px rgba(31, 66, 135, 0.04);
+
+  .option-btn {
+    display: flex;
+
+    .dropdown-menu {
+      box-shadow: 0 36px 48px rgba(18, 17, 88, 0.08);
+      border: 0px;
+      padding: 20px;
+      min-width: 200px;
+      top: 10px !important;
+      border-radius: 24px;
+
+      h6 {
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: $primary;
+      }
+
+      a {
+        display: block;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+
+        i {
+          font-size: 18px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .btn {
+      border-radius: 30px;
+      min-width: 128px;
+      padding: 7px 30px;
+
+      i {
+        margin-left: 10px;
+      }
+
+      &.btn-option {
+        background: #5867DD;
+        color: #fff;
+        margin-right: 15px;
+      }
+
+      &.btn-missing {
+        background: #F4516C;
+        color: #fff;
+      }
+
+    }
+  }
+
+  .tab-pane {
+    min-height: 800px;
+  }
+}
+
+
+.iframe-redirect {
+  margin: 10% auto 0;
+  text-align: center;
+  position: relative;
+
+  a {
+    display: block;
+    padding: 13px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    background: $primary;
+    color: #fff;
+    width: 250px;
+    margin: 50px auto 50px;
+  }
+
+  p {
+    color: #7272A8;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 500;
+    opacity: 0.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+.frameWrap {
+  position: relative;
+}
+
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  overflow-x: hidden;
+  left: 0;
+  right: 0
+}
+
+.line {
+  position: absolute;
+  opacity: 0.4;
+  background: $primary;
+  width: 100%;
+  height: 5px;
+}
+
+.subline {
+  position: absolute;
+  background: $primary;
+  height: 5px;
+}
+
+.inc {
+  animation: increase 2s infinite;
+}
+
+.dec {
+  animation: decrease 2s 0.5s infinite;
+}
+
+@keyframes increase {
+  from {
+    left: -5%;
+    width: 5%;
+  }
+
+  to {
+    left: 130%;
+    width: 100%;
+  }
+}
+
+@keyframes decrease {
+  from {
+    left: -80%;
+    width: 80%;
+  }
+
+  to {
+    left: 110%;
+    width: 10%;
+  }
+}

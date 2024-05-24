@@ -1,0 +1,525 @@
+.game_skin-category {
+  border-radius: 24px;
+  box-shadow: 0px 36px 48px rgba(47, 44, 216, 0.24);
+  background-image: linear-gradient(to left, #2F2CD8, #8481F5);
+
+  .card-header {
+    .card-title {
+      color: $white;
+      font-size: 20px;
+      border-color: #6E6CDE;
+    }
+  }
+
+  .game_skin-category-list {
+    ul {
+      border: 0px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    li {
+      position: relative;
+
+      &:hover, &:focus, &:active, &.active {
+        .checkbox {
+          border-width: 10px;
+          background: $primary;
+        }
+
+        .csga {
+          img {
+            box-shadow: 0px 14px 24px rgba(245, 194, 97, 0.24);
+          }
+        }
+
+        &.dota {
+          img {
+            box-shadow: 0px 14px 24px rgba(35, 90, 214, 0.24);
+          }
+        }
+
+        img {
+          opacity: 1;
+        }
+
+        .flex-grow-1 {
+          p {
+            color: #fff;
+
+            span {
+              color: #D0D0E6;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .checkbox {
+      height: 30px;
+      width: 30px;
+      border: 2px solid #fff;
+      display: inline-block;
+      position: absolute;
+      border-radius: 6px;
+      top: 15px;
+    }
+
+    .d-flex {
+      align-items: center;
+      margin-bottom: 30px;
+      margin-left: 50px;
+
+
+      img {
+        border-radius: 100px;
+        opacity: 0.6;
+      }
+
+      .flex-grow-1 {
+        p {
+          margin-bottom: 0px;
+          color: #AEAED5;
+          font-weight: 500;
+        }
+      }
+
+      span {
+        color: #AEAED5;
+      }
+    }
+  }
+
+}
+
+.game_skin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  .search_box {
+    .form-group {
+      position: relative;
+
+      .form-control {
+        border-radius: 30px;
+        min-height: 60px;
+        min-width: 450px;
+        border: 0px solid #D6D5FA;
+        padding: 0px 22px;
+        font-size: 18px;
+        font-weight: 500;
+        background: #F4F4FD;
+        color: $primary;
+        transition: all 0.3s ease-in-out;
+
+        &::-webkit-input-placeholder {
+          color: #AEAED5;
+        }
+
+        &:-ms-input-placeholder {
+          color: #AEAED5;
+        }
+
+        &::placeholder {
+          color: #AEAED5;
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          box-shadow: none !important;
+          outline: none;
+          border-color: $primary;
+          color: $primary;
+        }
+      }
+
+      span {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .sort_by {
+    .form-control {
+      border-radius: 30px;
+      min-height: 50px;
+      border: 0px solid #D6D5FA;
+      padding: 0px 22px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $primary;
+      transition: all 0.3s ease-in-out;
+      min-width: 210px;
+
+      .dropeddown {
+        border: 0px;
+
+        li {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        box-shadow: none !important;
+        outline: none;
+        border-color: $primary;
+        color: $primary;
+      }
+    }
+  }
+}
+
+
+.game_skin-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0px 36px 48px rgba(31, 66, 135, 0.04);
+  margin-bottom: 150px;
+
+  .load_more {
+    text-align: center;
+    display: inline-block;
+    margin: 50px auto;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #7272A8;
+  }
+}
+
+.game_skin-card {
+  border: 2px solid #D6D5FA;
+  border-radius: 24px;
+  padding: 22px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+
+  h5 {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: #FE9431;
+
+    img {
+      margin-left: 10px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('./../images/shop/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 36px 48px rgba(79, 79, 227, 0.24);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #2F2CD8, #8481F5);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+  }
+
+  &:hover,
+  &.focus,
+  &.active {
+    border-color: transparent;
+
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+
+    .game_skin-text {
+      h6 {
+        color: $white;
+      }
+    }
+  }
+}
+
+.dota_skin {
+  text-align: center;
+  padding: 30px 0px;
+
+  img {
+    max-width: 90px;
+  }
+}
+
+.game_skin-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    font-size: 42px;
+    color: #FE9431;
+  }
+}
+
+.game_skin-text {
+  color: #AEAED5;
+  font-size: 14px;
+
+  h6 {
+    font-size: 20px;
+    color: #7272A8;
+  }
+
+  p {
+    font-size: 20px;
+    color: #D0D0E6;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+}
+
+
+.cart_count {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  min-width: 140px;
+  background-image: linear-gradient(to left, #2F2CD8, #8481F5);
+  padding: 10px;
+  box-shadow: 0px 36px 48px rgba(18, 17, 88, 0.08);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  cursor: pointer;
+
+  .count {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    color: $white;
+    background: #FE9431;
+    border: 2px solid #fff;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+
+  .cart-title {
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+
+    span {
+      background: #4F4DBE;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      font-size: 24px;
+      color: #fff;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+    }
+  }
+}
+
+
+.cart_right_sidebar {
+  position: fixed;
+  right: -100%;
+  top: 100px;
+  bottom: 0;
+  height: 100%;
+  min-width: 453px;
+  background-image: linear-gradient(to bottom, #2F2CD8, #8481F5);
+  padding: 50px 30px;
+  transition: all 0.7s ease-in-out;
+
+  &.active {
+    right: 0;
+  }
+}
+
+.cart_right-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #6E6CDE;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  .cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > span {
+      background: #FE9431;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      font-size: 24px;
+      color: #fff;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 500;
+
+      span {
+        margin-left: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #D0D0E6;
+      }
+    }
+  }
+
+  .cart_sidebar_close {
+    span {
+      display: inline-block;
+      font-size: 36px;
+      color: #09077B;
+      cursor: pointer;
+    }
+  }
+}
+
+.cart_right_list {
+  ul {
+    min-height: 450px;
+
+    li {
+      position: relative;
+      margin-bottom: 40px;
+
+      & > span {
+        color: #D0D0E6;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .d-flex {
+        margin-left: 30px;
+
+        .cart_list-img {
+          width: 80px;
+          height: 80px;
+          border-radius: 12px;
+          background: #4744DD;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 16px;
+
+          img {
+            display: inline-block;
+            max-width: 50px;
+          }
+        }
+
+        .flex-grow-1 {
+          span {
+            color: #AEAED5;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+
+          h6 {
+            font-size: 20px;
+            color: #fff;
+          }
+
+          p {
+            color: #D0D0E6;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0;
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+          color: #FE9431;
+
+          img {
+            margin-left: 15px;;
+          }
+        }
+      }
+    }
+  }
+
+  .buy_btn {
+    bottom: 200px;
+    display: block;
+    left: 0px;
+    right: 0px;
+    margin: 0 30px;
+
+    .btn {
+      border-radius: 30px;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 500;
+
+      span {
+        margin-left: 24px;
+      }
+
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="162" height="162"
+     viewBox="0 0 162 162">
+    <defs>
+        <linearGradient id="linear-gradient" x1="1.157" y1="0.834" x2="-0.043" y2="0.753"
+                        gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#2c96d8"/>
+            <stop offset="1" stop-color="#34f7ff"/>
+        </linearGradient>
+        <filter id="Rectangle_282" x="0" y="0" width="162" height="162" filterUnits="userSpaceOnUse">
+            <feOffset dy="14" input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="12" result="blur"/>
+            <feFlood flood-color="#31daf3" flood-opacity="0.616"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_397" data-name="Group 397" transform="translate(-879 -354)">
+        <circle id="Ellipse_116" data-name="Ellipse 116" cx="24.165" cy="24.165" r="24.165"
+                transform="translate(973.356 438.543)" fill="#fcd5b2"/>
+        <circle id="Ellipse_118" data-name="Ellipse 118" cx="4.88" cy="4.88" r="4.88"
+                transform="translate(897.894 396.62)" fill="#fe9431"/>
+        <g id="Group_435" data-name="Group 435" transform="translate(0 31)">
+            <g id="Group_397-2" data-name="Group 397" transform="translate(0 -28)">
+                <g transform="matrix(1, 0, 0, 1, 879, 351)" filter="url(#Rectangle_282)">
+                    <rect id="Rectangle_282-2" data-name="Rectangle 282" width="90" height="90" rx="12"
+                          transform="translate(36 22)" fill="url(#linear-gradient)"/>
+                </g>
+            </g>
+            <g id="gem" transform="translate(902.792 363.869)">
+                <path id="Path_4093" data-name="Path 4093"
+                      d="M57.022,0,34.3,13.12V39.36l22.725,13.12L79.747,39.36V13.12Z" transform="translate(0)"
+                      fill="#82d2ff"/>
+                <path id="Path_4094" data-name="Path 4094" d="M57.022,26.24V0L34.3,13.12Z" transform="translate(0)"
+                      fill="#08b7fc"/>
+                <path id="Path_4095" data-name="Path 4095" d="M256,256Z" transform="translate(-198.978 -229.76)"
+                      fill="#82d2ff"/>
+                <path id="Path_4096" data-name="Path 4096" d="M34.3,128v26.24l22.725-13.12Z"
+                      transform="translate(0 -114.88)" fill="#006dff"/>
+                <path id="Path_4097" data-name="Path 4097" d="M278.725,128h0L256,141.12h0l22.725,13.12h0Z"
+                      transform="translate(-198.978 -114.88)" fill="#08b7fc"/>
+                <path id="Path_4098" data-name="Path 4098" d="M57.022,256,34.3,269.12l22.725,13.12Z"
+                      transform="translate(0 -229.76)" fill="#0050c0"/>
+                <path id="Path_4099" data-name="Path 4099" d="M256,282.24l22.725-13.12L256,256Z"
+                      transform="translate(-198.978 -229.76)" fill="#006dff"/>
+                <path id="Path_4100" data-name="Path 4100"
+                      d="M156.529,133.737V118.928l-12.825-7.4-12.825,7.4v14.809l12.825,7.4Z"
+                      transform="translate(-86.682 -100.092)" fill="#82d2ff"/>
+                <path id="Path_4101" data-name="Path 4101" d="M268.825,133.737V118.928L256,111.523v29.618Z"
+                      transform="translate(-198.978 -100.092)" fill="#55cbff"/>
+            </g>
+        </g>
+        <circle id="Ellipse_117" data-name="Ellipse 117" cx="14.197" cy="14.197" r="14.197"
+                transform="translate(902.245 364.943)" fill="#fe9431"/>
+        <g id="Ellipse_119" data-name="Ellipse 119" transform="translate(953.356 462.543)" fill="none" stroke="#2f2cd8"
+           stroke-width="1">
+            <circle cx="7.665" cy="7.665" r="7.665" stroke="none"/>
+            <circle cx="7.665" cy="7.665" r="7.165" fill="none"/>
+        </g>
+    </g>
+</svg>

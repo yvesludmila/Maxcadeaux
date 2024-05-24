@@ -1,0 +1,174 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.setting_card-content {
+    background: #f4f4fd;
+    padding: 33px 26px;
+    margin-bottom: 50px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.setting_card-content .icon {
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.04);
+}
+
+.setting_card-content .icon.paypal {
+    background-image: linear-gradient(to top left, #43bef2, #1e6cf7);
+}
+
+.setting_card-content .icon.btc {
+    background-image: linear-gradient(to top, #f7ae09, #f5e06b);
+}
+
+.setting_card-content .icon.aws {
+    background-image: linear-gradient(to bottom, #f5c56b, #ff8f2b);
+}
+
+.setting_card-content .icon.virtual {
+    background-image: linear-gradient(to bottom, #150781, #242edd);
+}
+
+.setting_card-content .icon.virtual span {
+    margin-left: 15px;
+}
+
+.setting_card-content h4, .setting_card-content .h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #7272a8;
+}
+
+.setting_card-content p {
+    color: #aeaed5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.setting_card-content a {
+    display: inline-block;
+    min-width: 150px;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    background: #d6d5fa;
+    color: #2F2CD8;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.setting_card-content::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("./../images/shop/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 36px 48px rgba(79, 79, 227, 0.24);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+}
+
+.setting_card-content::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #2f2cd8, #8481f5);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+}
+
+.setting_card-content.even::after {
+    background-image: url("./../images/shop/2.png");
+}
+
+.setting_card-content:hover::after, .setting_card-content.focus::after, .setting_card-content.active::after {
+    opacity: 1;
+}
+
+.setting_card-content:hover::before, .setting_card-content.focus::before, .setting_card-content.active::before {
+    opacity: 1;
+}
+
+.setting_card-content:hover .paypal, .setting_card-content.focus .paypal, .setting_card-content.active .paypal {
+    box-shadow: 0px 30px 40px rgba(45, 144, 245, 0.3);
+}
+
+.setting_card-content:hover .btc, .setting_card-content.focus .btc, .setting_card-content.active .btc {
+    box-shadow: 0px 30px 40px rgba(246, 189, 40, 0.34);
+}
+
+.setting_card-content:hover .aws, .setting_card-content.focus .aws, .setting_card-content.active .aws {
+    box-shadow: 0px 30px 40px rgba(254, 147, 48, 0.24);
+}
+
+.setting_card-content:hover .virtual, .setting_card-content.focus .virtual, .setting_card-content.active .virtual {
+    box-shadow: 0px 30px 40px rgba(35, 90, 214, 0.4);
+}
+
+.setting_card-content:hover h4, .setting_card-content:hover .h4, .setting_card-content.focus h4, .setting_card-content.focus .h4, .setting_card-content.active h4, .setting_card-content.active .h4 {
+    color: #fff;
+}
+
+.setting_card-content:hover p, .setting_card-content.focus p, .setting_card-content.active p {
+    color: #cdccdb;
+}
+
+.setting_card-content:hover .paypal-btn, .setting_card-content.focus .paypal-btn, .setting_card-content.active .paypal-btn {
+    background-image: linear-gradient(to right, #1e6cf7, #43bef2);
+    color: #fff;
+}
+
+.setting_card-content:hover .btc-btn, .setting_card-content.focus .btc-btn, .setting_card-content.active .btc-btn {
+    background-image: linear-gradient(to left, #f5e06b, #f7ae09);
+    color: #fff;
+}
+
+.setting_card-content:hover .aws-btn, .setting_card-content.focus .aws-btn, .setting_card-content.active .aws-btn {
+    background-image: linear-gradient(to left, #f5c56b, #ff8f2b);
+    color: #fff;
+}
+
+.setting_card-content:hover .virtual-btn, .setting_card-content.focus .virtual-btn, .setting_card-content.active .virtual-btn {
+    background-image: linear-gradient(to left, #150781, #2939f8);
+    color: #fff;
+}

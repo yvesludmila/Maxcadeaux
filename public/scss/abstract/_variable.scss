@@ -1,0 +1,68 @@
+// stylelint-disable-next-line scss/dollar-variable-default
+$primary: #2F2CD8;
+$secondary: #050505 !default;
+$success: #4caf50 !default;
+$info: #17a2b8 !default;
+$warning: #FE9431 !default;
+$danger: #D4293C !default;
+$light: #f8f9fa !default;
+$dark: #6a707e;
+$purple: #6672e8;
+
+// Body
+$body-bg: #fff;
+$body-color: #7184ad;
+
+
+// Typography
+$font-family-base: 'Rubik',
+sans-serif;
+$headings-font-weight: 500;
+$font-size-base: 1rem !default;
+$font-weight-base: 400 !default;
+// $line-height-base    : 1.6;
+$headings-line-height: 1.6;
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.875rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.125rem;
+$h5-font-size: 1rem;
+$h6-font-size: 1rem;
+
+
+$text-muted: #abafb3;
+
+$heading-primary-size: 1.8rem;
+$sub-heading-size: 1.6rem !default;
+$grid-gutter-width: 30px;
+$dropdown-lik-color: $body-color;
+$border-color: #EFF2F7;
+$headings-color: #1f2c73 !default;
+$table-striped-bg: $body-bg;
+$border-radius: 4px !default;
+$input-btn-focus-width: 0rem !default;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (//   sm: 540px,
+  //   md: 720px,
+  //   lg: 960px,
+  //   xl: 1140px,
+        xxl: 1500px) !default;
+
+
+// custom
+$radius: $border-radius;
+$shadow: 0px 1.25rem 1.5625rem rgba(22, 28, 45, 0.05);
+$shadow-sm: 0 .125rem .25rem rgba(35, 38, 45, .09);
+$shadow-lg: 0 1rem 3rem rgba(35, 38, 45, .275);
+
+$cinnabar: #E84F2C;
+$picton-blue: #48BCF9;
+$atlantis: #9CCA2B;
+$red-orange: #FF3132;
+$sandy-brown: #F1A349;
+$carnation: #FA5D5F;
+$big-stone: #1B3346;
+$selago: #F4F4FD;
+$perfume: #D6D5FA;
+$papaya-whip: #FFF0D0;

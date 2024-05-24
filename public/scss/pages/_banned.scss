@@ -1,0 +1,36 @@
+
+.banned {
+  height: 100vh;
+}
+
+.banned-content {
+  text-align: center;
+
+  img {
+    margin-bottom: 75px;
+  }
+
+  h3 {
+    font-size: 48px;
+    color: #121158;
+    line-height: 60px;
+    margin-bottom: 35px;
+  }
+
+  p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #7272A8;
+    line-height: 30px;
+  }
+
+  .btn {
+    width: 210px;
+    border-radius: 30px;
+    padding: 13px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+}

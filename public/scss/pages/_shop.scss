@@ -1,0 +1,577 @@
+.gift_card {
+  min-height: 700px;
+}
+
+.icon {
+  height: 96px;
+  width: 96px;
+  margin: 0 auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.04);
+
+  &.paypal {
+    background-image: linear-gradient(to top left, #43bef2, #1e6cf7);
+  }
+
+  &.btc {
+    background-image: linear-gradient(to top, #f7ae09, #f5e06b);
+  }
+
+  &.aws {
+    background-image: linear-gradient(to bottom, #f5c56b, #ff8f2b);
+  }
+
+  &.virtual {
+    background-image: linear-gradient(to bottom, #150781, #242edd);
+
+    span {
+      margin-left: 15px;
+    }
+  }
+}
+
+.gift_card-content {
+  background: #f4f4fd;
+  padding: 33px 26px;
+  text-align: center;
+  //  min-height: 475px;
+  margin-bottom: 50px;
+  border-radius: 24px;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+
+  .icon {
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.04);
+
+    &.paypal {
+      background-image: linear-gradient(to top left, #43bef2, #1e6cf7);
+    }
+
+    &.btc {
+      background-image: linear-gradient(to top, #f7ae09, #f5e06b);
+    }
+
+    &.aws {
+      background-image: linear-gradient(to bottom, #f5c56b, #ff8f2b);
+    }
+
+    &.virtual {
+      background-image: linear-gradient(to bottom, #150781, #242edd);
+
+      span {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #7272a8;
+  }
+
+  p {
+    color: #aeaed5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  a {
+    display: inline-block;
+    min-width: 150px;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    background: #d6d5fa;
+    color: $primary;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("./../images/shop/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 36px 48px rgba(79, 79, 227, 0.24);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+
+    label {
+      color: white !important;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #2f2cd8, #8481f5);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+  }
+
+  &.even {
+    &::after {
+      background-image: url("./../images/shop/2.png");
+    }
+  }
+
+  &:hover,
+  &.focus,
+  &.active {
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+
+    .paypal {
+      box-shadow: 0px 30px 40px rgba(45, 144, 245, 0.3);
+    }
+
+    .btc {
+      box-shadow: 0px 30px 40px rgba(246, 189, 40, 0.34);
+    }
+
+    .aws {
+      box-shadow: 0px 30px 40px rgba(254, 147, 48, 0.24);
+    }
+
+    .virtual {
+      box-shadow: 0px 30px 40px rgba(35, 90, 214, 0.4);
+    }
+
+    h4 {
+      color: $white;
+    }
+
+    p {
+      color: #cdccdb;
+    }
+
+    .paypal-btn {
+      background-image: linear-gradient(to right, #1e6cf7, #43bef2);
+      color: $white;
+    }
+
+    .btc-btn {
+      background-image: linear-gradient(to left, #f5e06b, #f7ae09);
+      color: $white;
+    }
+
+    .aws-btn {
+      background-image: linear-gradient(to left, #f5c56b, #ff8f2b);
+      color: $white;
+    }
+
+    .virtual-btn {
+      background-image: linear-gradient(to left, #150781, #2939f8);
+      color: $white;
+    }
+  }
+}
+
+.setting_card-content {
+  background: #f4f4fd;
+  padding: 33px 26px;
+  //  min-height: 475px;
+  margin-bottom: 50px;
+  border-radius: 24px;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+
+  .icon {
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.04);
+
+    &.paypal {
+      background-image: linear-gradient(to top left, #43bef2, #1e6cf7);
+    }
+
+    &.btc {
+      background-image: linear-gradient(to top, #f7ae09, #f5e06b);
+    }
+
+    &.aws {
+      background-image: linear-gradient(to bottom, #f5c56b, #ff8f2b);
+    }
+
+    &.virtual {
+      background-image: linear-gradient(to bottom, #150781, #242edd);
+
+      span {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #7272a8;
+  }
+
+  p {
+    color: #aeaed5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  a {
+    display: inline-block;
+    min-width: 150px;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    background: #d6d5fa;
+    color: $primary;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("./../images/shop/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 36px 48px rgba(79, 79, 227, 0.24);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #2f2cd8, #8481f5);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 24px;
+    z-index: -1;
+  }
+
+  &.even {
+    &::after {
+      background-image: url("./../images/shop/2.png");
+    }
+  }
+
+  &:hover,
+  &.focus,
+  &.active {
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+
+    .paypal {
+      box-shadow: 0px 30px 40px rgba(45, 144, 245, 0.3);
+    }
+
+    .btc {
+      box-shadow: 0px 30px 40px rgba(246, 189, 40, 0.34);
+    }
+
+    .aws {
+      box-shadow: 0px 30px 40px rgba(254, 147, 48, 0.24);
+    }
+
+    .virtual {
+      box-shadow: 0px 30px 40px rgba(35, 90, 214, 0.4);
+    }
+
+    h4 {
+      color: $white;
+    }
+
+    p {
+      color: #cdccdb;
+    }
+
+    .paypal-btn {
+      background-image: linear-gradient(to right, #1e6cf7, #43bef2);
+      color: $white;
+    }
+
+    .btc-btn {
+      background-image: linear-gradient(to left, #f5e06b, #f7ae09);
+      color: $white;
+    }
+
+    .aws-btn {
+      background-image: linear-gradient(to left, #f5c56b, #ff8f2b);
+      color: $white;
+    }
+
+    .virtual-btn {
+      background-image: linear-gradient(to left, #150781, #2939f8);
+      color: $white;
+    }
+  }
+}
+
+//  Paypal Details
+
+.shop_withdraw {
+  margin-bottom: 150px;
+}
+
+.shop_card_desc {
+  margin-bottom: 150px;
+
+  .card {
+    background-image: linear-gradient(to bottom left, #2f2cd8, #8481f5);
+    border-radius: 24px;
+    box-shadow: 0px 36px 48px rgba(47, 44, 216, 0.24);
+
+    .card-header {
+      margin: 0px 27px;
+      padding: 33px 0px;
+      justify-content: flex-start;
+      border-color: #6e6cde;
+
+      .icon {
+        margin: 0 30px 0 0;
+      }
+
+      h4 {
+        color: $white;
+        line-height: 36px;
+      }
+    }
+
+    .card-body {
+      padding: 36px 27px;
+
+      h5 {
+        font-size: 18px;
+        color: $white;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #d0d0e6;
+      }
+    }
+
+    .card-footer {
+      display: flex;
+      margin: 0px 27px;
+      padding: 33px 0px;
+      border-color: #8280f7;
+      background: transparent;
+
+      .website,
+      .help {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+
+        span {
+          display: inline-block;
+          margin-right: 22px;
+        }
+
+        p {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 500;
+          color: #fff;
+          margin-bottom: 0px;
+        }
+
+        &.help {
+          border-left: 1px solid #8280f7;
+        }
+      }
+    }
+  }
+}
+
+.shop_card_content {
+  .card {
+    box-shadow: 0px 36px 48px rgba(31, 66, 135, 0.04);
+    border-radius: 24px;
+
+    .card-header {
+      margin: 0px 38px;
+      padding: 33px 0px;
+      border-color: #f1f1f8;
+    }
+
+    .card-body {
+      padding: 30px 38px;
+
+      form {
+        .form-group {
+          label {
+            font-size: 18px;
+            font-weight: 500;
+            color: #7272a8;
+            margin-bottom: 20px;
+          }
+
+          ul {
+            margin-bottom: 45px;
+
+            li {
+              display: inline-block;
+              min-width: 120px;
+              text-align: center;
+              margin-right: 20px;
+              border: 2px solid #d6d5fa;
+              color: #aeaed5;
+              padding: 13px 30px;
+              border-radius: 100px;
+              font-size: 18px;
+              font-weight: 500;
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              display: inline-flex;
+              align-items: center;
+
+              &:hover,
+              &:focus,
+              &.active {
+                background-image: linear-gradient(to right, #8481f5, #2f2cd8);
+                border: 0px solid transparent;
+                color: $white;
+                padding: 15px 32px;
+
+                i {
+                  color: #fff !important;
+                }
+              }
+            }
+
+            &.crypto_currencies {
+              li {
+                i {
+                  margin-right: 10px;
+                  font-size: 30px;
+
+                  &.BTC-alt {
+                    color: #f7931a;
+                  }
+                }
+              }
+            }
+          }
+
+          .form-control {
+            height: 60px;
+            border: 2px solid #d6d5fa;
+            border-radius: 30px;
+            padding: 20px 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #aeaed5;
+
+            &:hover,
+            &:focus,
+            &.active {
+              box-shadow: none;
+              outline: none;
+            }
+          }
+        }
+
+        .form-button {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 40px;
+
+          p {
+            max-width: 650px;
+            font-size: 18px;
+            line-height: 30px;
+            color: #aeaed5;
+          }
+
+          .btn {
+            min-width: 170px;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .alert {
+        background: #fff0d0;
+        padding: 28px 30px;
+        color: #fe9431;
+        font-size: 18px;
+        border-radius: 16px;
+        margin-top: 45px;
+
+        .close {
+          padding: 1.75rem 1.25rem;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.bug_bunty {
+  margin-bottom: 150px;
+}
+
+.program_details {
+  background: #fff;
+  box-shadow: 0px 36px 48px (31, 66, 135, 0.04);
+  padding: 27px 36px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: #515184;
+  }
+
+  p {
+    line-height: 30px;
+    color: #7272A8;
+  }
+}
+
+
+.target_overview {
+  background: #fff;
+  box-shadow: 0px 36px 48px (31, 66, 135, 0.04);
+  padding: 27px 36px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #515184;
+  }
+
+  .tag_list {
+    a {
+      display: inline-block;
+      padding: 15px 25px;
+      border: 2px solid $primary;
+      box-shadow: 0px 14px 24px rgba(47, 44, 216, 0.08);
+      border-radius: 30px;
+      margin-right: 16px;
+      font-weight: 500;
+      color: $primary;
+    }
+  }
+}
+
+
+.target_reward {
+  background: #fff;
+  box-shadow: 0px 36px 48px rgba(31, 66, 135, 0.04);
+  padding: 27px 36px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+
+  thead {
+    margin-bottom: 20px;
+
+    th {
+      border-bottom: 1px solid #F1F1F8;
+      border-top: 0px;
+      line-height: 32px;
+      color: #515184;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  tbody {
+    tr {
+      &:first-child {
+        th, td {
+          padding-top: 50px !important;
+        }
+      }
+
+      th,
+      td {
+        padding: 25px 20px;
+        border-top: 0px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #7272A8;
+        line-height: 32px;
+
+        &.text-primary {
+          border-left: 1px solid #F1F1F8;
+          min-width: 200px;
+          padding: 25px 40px;
+        }
+      }
+    }
+  }
+}
+
+
+.vulnerabilities {
+  border: 1px solid #D0D0E6;
+  padding: 30px 40px;
+  border-radius: 24px;
+  background: #FCFCFE;
+
+  h4 {
+    font-size: 20px;
+    color: #515184;
+    padding-bottom: 25px;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+    &.title {
+      border-bottom: 1px solid #D0D0E6;
+      margin-top: 0px;
+    }
+  }
+
+  p {
+    line-height: 30px;
+    margin-bottom: 40px;
+
+    &.condition {
+      line-height: 24px;
+      margin-bottom: 0px;
+      margin-top: 30px;
+      color: #AEAED5;
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    max-width: 286px;
+    border-radius: 25px;
+    padding: 13px;
+    font-weight: 500;
+  }
+
+}

@@ -1,0 +1,30 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" id="Group_419" data-name="Group 419" xmlns="http://www.w3.org/2000/svg"
+     width="630" height="224.265" viewBox="0 0 630 224.265">
+    <defs>
+        <linearGradient id="linear-gradient" x1="1.07" y1="0.953" x2="-0.125" y2="0.07"
+                        gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#2f2cd8"/>
+            <stop offset="1" stop-color="#8481f5"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="1.07" y1="0.953" x2="0.234" y2="0.595"
+                        gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#2f2cd8"/>
+            <stop offset="1" stop-color="#3c3b77" stop-opacity="0.039"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient"/>
+    </defs>
+    <g id="Group_275" data-name="Group 275" transform="translate(0 0)">
+        <rect id="Rectangle_339" data-name="Rectangle 339" width="629.512" height="224.123" rx="24"
+              transform="translate(0 0)" fill="url(#linear-gradient)"/>
+        <path id="Path_215" data-name="Path 215"
+              d="M82.127,202.516,408,203c13.255,0,24-9.773,24-21.829V.71c0-12.056,17.9,133.979-163.25,98.5S68.872,202.516,82.127,202.516Z"
+              transform="translate(197.512 21.119)" opacity="0.3" fill="url(#linear-gradient-2)"/>
+        <path id="Path_216" data-name="Path 216"
+              d="M112,106.777c0-28.13-25.072-50.934-56-50.934S0,78.647,0,106.777c43.369,0,29.254.32,58.157,0C85.227,106.478,104.374,106.777,112,106.777Z"
+              transform="translate(237.594 117.346)" opacity="0.3" fill="url(#linear-gradient-3)"/>
+        <ellipse id="Ellipse_95" data-name="Ellipse 95" cx="16.5" cy="15.007" rx="16.5" ry="15.007"
+                 transform="translate(360.154 150.451)" opacity="0.2" fill="url(#linear-gradient-3)"/>
+        <ellipse id="Ellipse_96" data-name="Ellipse 96" cx="12" cy="10.914" rx="12" ry="10.914"
+                 transform="translate(265.55 133.17)" opacity="0.1" fill="url(#linear-gradient-3)"/>
+    </g>
+</svg>

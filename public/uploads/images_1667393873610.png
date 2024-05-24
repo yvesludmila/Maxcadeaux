@@ -1,0 +1,26 @@
+<?php
+	include('./inc/config.php');
+
+	// Setup postback variables.
+	//$key = 'bfd7c9c1709052bb';
+	$subidS = $_GET['user_id']; // 
+	$amount = $_GET['point_value'];
+	$tx_id = $_GET['tx_id'];
+	$usd_value = $_GET['usd_value'];
+	$vc_title = $_GET['vc_title'];
+	$ip = $_GET['session_ip'];
+
+		$subid = $subidS;
+		$tab = explode("12345",$subid); 
+		$subid = $tab[0];
+
+		$user = $pdo->query("SELECT pseudo FROM users WHERE idm = '".$subid."'");
+		$dones_user = $user->fetch(PDO::FETCH_ASSOC);
+		$sonpseudo = $dones_user['pseudo'];
+		
+		// On cr?©dite l'utilisateur
+		// On ajoute l'historique de l'offre
+		$pdo->exec("INSERT INTO `histo_ow` (`id`, `pseudo`, `toks`, `offerwall`, `idt`, `date`, `etat`, `data`, `ip`) VALUES ('', '".$sonpseudo."', '".$amount."', 'AdGate Media', '".$vc_title."', '".date('d/m/Y à H:i')."', 'En attente', '".$subidS."', '".$ip."')");
+
+		echo 1;
+?>
